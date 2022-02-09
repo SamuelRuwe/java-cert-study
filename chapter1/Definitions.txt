@@ -1,0 +1,91 @@
+Object: Run time instance of a class in memory
+Instance: Single representation of the class
+Reference: Variable that points to the object
+
+-------------------------------------------------------------------------------
+Class Elements (Members)
+1. Fields (variables)
+2. Methods
+
+-------------------------------------------------------------------------------
+Methods
+
+public int numberVisitors(int month)
+
+Access Modifier: public
+Return Type: int
+Method Name: numberVisitors
+Parameters: int month
+
+Method Signature: Method Name & Parameters
+
+-------------------------------------------------------------------------------
+Comments
+
+// Single Line Comment
+
+/*
+ * Multi Line Comment
+ * Star isn't required on other lines, used for readability
+ */
+
+/**
+ * Javadoc. Same as multiline, but starts with /** for Javadoc tools to pick
+ * it up
+ * @author Sam
+ */
+
+Comment will close after */ even if it isn't on a new line
+/*
+ * This will not compile
+ * */
+ */
+
+-------------------------------------------------------------------------------
+Command Line Java
+
+javac ${.java file}
+java ${file name without .class}
+
+Java 11 can run single files as just
+java ${file.java}
+This is called a single-file source-code program
+It can only import files that came with the JDK
+
+Pass in arguments after such as
+java ${file.java} arg1 arg2
+
+all arguments are treated as strings
+
+-------------------------------------------------------------------------------
+Packages
+
+Logical groupings of classes
+
+Package naming rules are the same as variables
+
+Child packages are more specific packages within a package
+
+com.amazon.book is a child package of com.amazon
+
+import java.util.*;
+imports all packages in java.util
+Doesn't slow down program execution
+
+import java.util.Random; // imports Random package
+
+java.lang.* package is imported by default
+
+package: java.nio.file.*;
+
+import java.nio.*; // Invalid as you can only import class names
+import java.nio.*.*; // Invalid as you can only use one wildcard and it must
+be at the end of the import
+
+import java.nio.file.File.* // Invalid as you can only import class names
+and not methods
+
+Classes in same package are automatically checked
+
+-------------------------------------------------------------------------------
+
